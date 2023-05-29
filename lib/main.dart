@@ -2,6 +2,7 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:internet_connection_checker/internet_connection_checker.dart';
+import 'package:lottie/lottie.dart';
 
 void main() {
   runApp(const MyApp());
@@ -67,37 +68,49 @@ class _MyHomePageState extends State<MyHomePage> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      bottomNavigationBar: _showStatus
-          ? _isConnected
-              ? BottomAppBar(
-                  child: Container(
-                    height: 24,
-                    color: Colors.green,
-                    child: const Center(
-                      child: Text(
-                        "Back online",
-                        style: TextStyle(fontSize: 12, color: Colors.white),
-                      ),
-                    ),
-                  ),
-                )
-              : BottomAppBar(
-                  child: Container(
-                    height: 24,
-                    color: Colors.red,
-                    child: const Center(
-                      child: Text(
-                        "No connection",
-                        style: TextStyle(
-                          fontSize: 12,
-                          color: Colors.white,
+    return SafeArea(
+      child: Scaffold(
+        appBar: AppBar(
+          title: const Text('Flutter Common'),
+        ),
+        body: Center(
+          child: Column(
+            children: [
+              Lottie.asset("assets/lottie/no_notification.json"),
+            ],
+          ),
+        ),
+        bottomNavigationBar: _showStatus
+            ? _isConnected
+                ? BottomAppBar(
+                    child: Container(
+                      height: 24,
+                      color: Colors.green,
+                      child: const Center(
+                        child: Text(
+                          "Back online",
+                          style: TextStyle(fontSize: 12, color: Colors.white),
                         ),
                       ),
                     ),
-                  ),
-                )
-          : Container(),
+                  )
+                : BottomAppBar(
+                    child: Container(
+                      height: 24,
+                      color: Colors.red,
+                      child: const Center(
+                        child: Text(
+                          "No connection",
+                          style: TextStyle(
+                            fontSize: 12,
+                            color: Colors.white,
+                          ),
+                        ),
+                      ),
+                    ),
+                  )
+            : const BottomAppBar(),
+      ),
     );
   }
 
