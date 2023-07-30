@@ -1,7 +1,11 @@
-import 'dart:async';
-
+import 'package:common/view/home/home_view.dart';
+import 'package:get/get.dart';
 import 'package:flutter/material.dart';
+import 'package:common/route/app_page.dart';
+import 'dart:async';
+import 'package:get/get_navigation/src/root/get_material_app.dart';
 import 'package:internet_connection_checker/internet_connection_checker.dart';
+import 'core/binding.dart';
 
 void main() {
   runApp(const MyApp());
@@ -12,13 +16,14 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Flutter Common',
+    return GetMaterialApp(
       debugShowCheckedModeBanner: false,
+      initialRoute: AppPage.initial,
+      initialBinding: Binding(),
+      getPages: AppPage.routes,
+      home: const HomeView(),
       theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: const MyHomePage(),
+          colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple)),
     );
   }
 }
