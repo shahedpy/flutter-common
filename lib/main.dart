@@ -74,13 +74,6 @@ class _MyHomePageState extends State<MyHomePage> {
         appBar: AppBar(
           title: const Text('Flutter Common'),
         ),
-        body: Center(
-          child: Column(
-            children: [
-              Lottie.asset("assets/lottie/no_notification.json"),
-            ],
-          ),
-        ),
         bottomNavigationBar: _showStatus
             ? _isConnected
                 ? BottomAppBar(
