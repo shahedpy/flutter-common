@@ -9,10 +9,11 @@ class LottieAnimationSection extends GetWidget<LottieAnimationViewModel> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
-        children: [
-          Lottie.asset("assets/lottie/no_notification.json"),
-        ],
+      appBar: AppBar(
+        title: const Text("Lottie Animation"),
+      ),
+      body: Center(
+        child: Lottie.asset("assets/lottie/no_notification.json"),
       ),
     );
   }
