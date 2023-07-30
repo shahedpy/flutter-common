@@ -6,6 +6,6 @@ class UserPickerView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const UserPickerSection();
+    return UserPickerSection();
   }
 }

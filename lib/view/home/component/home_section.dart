@@ -11,6 +11,7 @@ class HomeSection extends GetWidget<HomeViewModel> {
     return Scaffold(
       appBar: AppBar(
         title: const Text("Common"),
+        automaticallyImplyLeading: false,
       ),
       body: Center(
         child: Column(
