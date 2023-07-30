@@ -3,6 +3,9 @@ class UserModel {
   final String email;
   final String profilePicture;
 
-  UserModel(
-      {required this.name, required this.email, required this.profilePicture});
+  UserModel({
+    required this.name,
+    required this.email,
+    required this.profilePicture,
+  });
 }

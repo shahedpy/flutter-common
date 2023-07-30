@@ -1,22 +1,18 @@
-import 'package:common/model/user_model.dart';
 import 'package:get/get.dart';
+import '../model/user_model.dart';
 
 class UserPickerViewModel extends GetxController {
   RxList<UserModel> selectedUsers = <UserModel>[].obs;
-  List<UserModel> users = [
+  final List<UserModel> users = [
     UserModel(
-        name: "Shahed", email: "shahed@tiger-park.com", profilePicture: "url"),
+        name: "Shahed",
+        email: "shahed_hridoy@gmail.com",
+        profilePicture: 'user1.jpg'),
     UserModel(
-        name: "Rajib", email: "rajib@tiger-park.com", profilePicture: "url"),
+        name: "Nazim", email: "nazim@gmail.com", profilePicture: 'user2.jpg'),
     UserModel(
-        name: "Shahriar",
-        email: "shahriar@tiger-park.com",
-        profilePicture: "url"),
+        name: "Shakil", email: "shakil@gmail.com", profilePicture: 'user3.jpg'),
     UserModel(
-        name: "Dipto", email: "dipto@tiger-park.com", profilePicture: "url"),
-    UserModel(
-        name: "Meghla",
-        email: "msultana@tiger-park.com",
-        profilePicture: "url"),
+        name: "Rajib", email: "rajib@gmail.com", profilePicture: 'user4.jpg'),
   ];
 }

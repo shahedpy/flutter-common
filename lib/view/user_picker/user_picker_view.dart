@@ -1,5 +1,5 @@
-import 'package:common/view/user_picker/component/user_picker_section.dart';
 import 'package:flutter/material.dart';
+import 'component/user_picker_section.dart';
 
 class UserPickerView extends StatelessWidget {
   const UserPickerView({super.key});
