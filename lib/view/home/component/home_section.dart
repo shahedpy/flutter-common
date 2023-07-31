@@ -12,20 +12,23 @@ class HomeSection extends GetWidget<HomeViewModel> {
       appBar: AppBar(
         title: const Text("Common"),
         automaticallyImplyLeading: false,
+        centerTitle: true,
       ),
       body: Center(
         child: Column(
           children: [
             ElevatedButton(
-                onPressed: () {
-                  Get.toNamed(AppRoute.userPicker);
-                },
-                child: const Text("User Picker")),
+              onPressed: () => Get.toNamed(AppRoute.userPicker),
+              child: const Text("User Picker"),
+            ),
             ElevatedButton(
-                onPressed: () {
-                  Get.toNamed(AppRoute.lottieAnimation);
-                },
-                child: const Text("Lottie Animation"))
+              onPressed: () => Get.toNamed(AppRoute.lottieAnimation),
+              child: const Text("Lottie Animation"),
+            ),
+            ElevatedButton(
+              onPressed: () => Get.toNamed(AppRoute.connectionCheck),
+              child: const Text("Connectivity Check"),
+            ),
           ],
         ),
       ),
