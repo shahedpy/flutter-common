@@ -8,8 +8,8 @@ class Binding extends Bindings {
   @override
   void dependencies() {
     Get.lazyPut(() => HomeViewModel());
-    Get.lazyPut(() => UserPickerViewModel());
-    Get.lazyPut(() => LottieAnimationViewModel());
-    Get.lazyPut(() => ConnectionCheckViewModel());
+    Get.lazyPut(() => UserPickerViewModel(), fenix: true);
+    Get.lazyPut(() => LottieAnimationViewModel(), fenix: true);
+    Get.lazyPut(() => ConnectionCheckViewModel(), fenix: true);
   }
 }
