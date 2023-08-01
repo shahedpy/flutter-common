@@ -9,6 +9,7 @@ class ConnectionCheckSection extends GetWidget<ConnectionCheckViewModel> {
   Widget build(BuildContext context) {
     return Obx(() => Scaffold(
           appBar: AppBar(
+            backgroundColor: Theme.of(context).colorScheme.inversePrimary,
             title: const Text("Connection Check"),
           ),
           body: const Text("Connection Check"),

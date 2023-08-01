@@ -10,9 +10,9 @@ class HomeSection extends GetWidget<HomeViewModel> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Theme.of(context).colorScheme.inversePrimary,
         title: const Text("Common"),
         automaticallyImplyLeading: false,
-        centerTitle: true,
       ),
       body: Center(
         child: Column(

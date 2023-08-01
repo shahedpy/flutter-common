@@ -10,6 +10,7 @@ class LottieAnimationSection extends GetWidget<LottieAnimationViewModel> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Theme.of(context).colorScheme.inversePrimary,
         title: const Text("Lottie Animation"),
       ),
       body: Center(
