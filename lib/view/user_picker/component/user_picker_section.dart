@@ -32,9 +32,10 @@ class UserPickerSection extends GetWidget<UserPickerViewModel> {
           Padding(
             padding: const EdgeInsets.all(16.0),
             child: TypeAheadField<UserModel>(
-              textFieldConfiguration: const TextFieldConfiguration(
+              textFieldConfiguration: TextFieldConfiguration(
+                controller: _typeAheadController,
                 autofocus: true,
-                decoration: InputDecoration(
+                decoration: const InputDecoration(
                   hintText: "Enter user name",
                 ),
               ),
