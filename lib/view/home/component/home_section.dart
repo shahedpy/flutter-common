@@ -11,7 +11,7 @@ class HomeSection extends GetWidget<HomeViewModel> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-        title: const Text("Common"),
+        title: const Text("Flutter Common"),
         automaticallyImplyLeading: false,
       ),
       body: Center(
