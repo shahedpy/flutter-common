@@ -14,20 +14,30 @@ class HomeSection extends GetWidget<HomeViewModel> {
         title: const Text("Flutter Common"),
         automaticallyImplyLeading: false,
       ),
-      body: Center(
-        child: Column(
+      body: Container(
+        padding: const EdgeInsets.all(15.0),
+        child: Wrap(
           children: [
-            ElevatedButton(
-              onPressed: () => Get.toNamed(AppRoute.userPicker),
-              child: const Text("User Picker"),
+            Padding(
+              padding: const EdgeInsets.all(5.0),
+              child: ElevatedButton(
+                onPressed: () => Get.toNamed(AppRoute.userPicker),
+                child: const Text("User Picker"),
+              ),
             ),
-            ElevatedButton(
-              onPressed: () => Get.toNamed(AppRoute.lottieAnimation),
-              child: const Text("Lottie Animation"),
+            Padding(
+              padding: const EdgeInsets.all(5.0),
+              child: ElevatedButton(
+                onPressed: () => Get.toNamed(AppRoute.lottieAnimation),
+                child: const Text("Lottie Animation"),
+              ),
             ),
-            ElevatedButton(
-              onPressed: () => Get.toNamed(AppRoute.connectionCheck),
-              child: const Text("Connectivity Check"),
+            Padding(
+              padding: const EdgeInsets.all(5.0),
+              child: ElevatedButton(
+                onPressed: () => Get.toNamed(AppRoute.connectionCheck),
+                child: const Text("Connectivity Check"),
+              ),
             ),
           ],
         ),
