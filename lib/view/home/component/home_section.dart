@@ -39,6 +39,13 @@ class HomeSection extends GetWidget<HomeViewModel> {
                 child: const Text("Connectivity Check"),
               ),
             ),
+            Padding(
+              padding: const EdgeInsets.all(5.0),
+              child: ElevatedButton(
+                onPressed: () => Get.toNamed(AppRoute.loginForm),
+                child: const Text("Login Form"),
+              ),
+            ),
           ],
         ),
       ),
