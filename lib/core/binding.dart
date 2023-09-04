@@ -1,4 +1,5 @@
 import 'package:common/view_model/login_view_model.dart';
+import 'package:common/view_model/rounded_app_bar_view_model.dart';
 import 'package:get/get.dart';
 import 'package:common/view_model/home_view_model.dart';
 import 'package:common/view_model/user_picker_view_model.dart';
@@ -13,5 +14,6 @@ class Binding extends Bindings {
     Get.lazyPut(() => LottieAnimationViewModel(), fenix: true);
     Get.lazyPut(() => ConnectionCheckViewModel(), fenix: true);
     Get.lazyPut(() => LoginViewModel(), fenix: true);
+    Get.lazyPut(() => RoundedAppBarViewModel(), fenix: true);
   }
 }

@@ -46,6 +46,13 @@ class HomeSection extends GetWidget<HomeViewModel> {
                 child: const Text("Login Form"),
               ),
             ),
+            Padding(
+              padding: const EdgeInsets.all(5.0),
+              child: ElevatedButton(
+                onPressed: () => Get.toNamed(AppRoute.roundedAppBar),
+                child: const Text("Rounded App Bar"),
+              ),
+            ),
           ],
         ),
       ),

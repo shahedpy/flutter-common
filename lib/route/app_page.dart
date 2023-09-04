@@ -1,3 +1,5 @@
+import 'package:common/view/rounded_app_bar/rounded_app_bar_view.dart';
+
 import 'app_route.dart';
 import 'package:get/get.dart';
 import '../view/home/home_view.dart';
@@ -29,5 +31,9 @@ abstract class AppPage {
       name: AppRoute.loginForm,
       page: () => const LoginView(),
     ),
+    GetPage(
+      name: AppRoute.roundedAppBar,
+      page: () => const RoundedAppBarView(),
+    )
   ];
 }

@@ -3,5 +3,6 @@ abstract class AppRoute {
       userPicker = '/user_picker',
       lottieAnimation = '/lottie_animation',
       connectionCheck = '/connectivity_check',
-      loginForm = '/login_form';
+      loginForm = '/login_form',
+      roundedAppBar = '/rounded_app_bar';
 }
